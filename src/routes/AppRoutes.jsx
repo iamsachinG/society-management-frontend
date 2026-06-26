@@ -2,16 +2,16 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import ResidentLayout from "../layouts/ResidentLayout";
 
-import Dashboard from "../pages/Dashboard";
-import Profile from "../pages/Profile";
-import Maintenance from "../pages/Maintenance";
-import Visitors from "../pages/Visitors";
-import Documents from "../pages/Documents";
-import Complaints from "../pages/Complaints";
-import Notifications from "../pages/Notifications";
-import Amenities from "../pages/Amenities";
-import Settings from "../pages/Settings";
-import NotFound from "../pages/NotFound";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Profile from "../pages/Profile/Profile";
+import Maintenance from "../pages/Maintenance/Maintenance";
+import Visitors from "../pages/Visitors/Visitors";
+import Documents from "../pages/Documents/Documents";
+import Complaints from "../pages/Complaints/Complaints";
+import Notifications from "../pages/Notifications/Notifications";
+import Amenities from "../pages/Amenities/Amenities";
+import Settings from "../pages/Settings/Settings";
+import NotFound from "../pages/NotFound/NotFound";
 
 function AppRoutes() {
   return (

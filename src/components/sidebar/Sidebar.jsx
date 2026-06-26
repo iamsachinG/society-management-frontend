@@ -11,6 +11,8 @@ import {
     HiOutlineArrowLeftOnRectangle,
 } from "react-icons/hi2";
 
+import { NavLink } from "react-router-dom";
+
 function Sidebar() {
     return (
         <aside className="w-64 h-screen bg-slate-900 text-white flex flex-col">
@@ -25,15 +27,59 @@ function Sidebar() {
 
             <nav className="mt-6 px-4 space-y-2 flex-1">
 
-                <SidebarItem icon={<HiOutlineHome />} text="Dashboard" />
-                <SidebarItem icon={<HiOutlineUser />} text="My Profile" />
-                <SidebarItem icon={<HiOutlineCreditCard />} text="Maintenance" />
-                <SidebarItem icon={<HiOutlineUsers />} text="Visitors" />
-                <SidebarItem icon={<HiOutlineDocumentText />} text="Documents" />
-                <SidebarItem icon={<HiOutlineExclamationCircle />} text="Complaints" />
-                <SidebarItem icon={<HiOutlineBell />} text="Notifications" />
-                <SidebarItem icon={<HiOutlineBuildingOffice2 />} text="Amenities" />
-                <SidebarItem icon={<HiOutlineCog6Tooth />} text="Settings" />
+                <SidebarItem
+                    to="/dashboard"
+                    icon={<HiOutlineHome />}
+                    text="Dashboard"
+                />
+
+                <SidebarItem
+                    to="/profile"
+                    icon={<HiOutlineUser />}
+                    text="My Profile"
+                />
+
+                <SidebarItem
+                    to="/maintenance"
+                    icon={<HiOutlineCreditCard />}
+                    text="Maintenance"
+                />
+
+                <SidebarItem
+                    to="/visitors"
+                    icon={<HiOutlineUsers />}
+                    text="Visitors"
+                />
+
+                <SidebarItem
+                    to="/documents"
+                    icon={<HiOutlineDocumentText />}
+                    text="Documents"
+                />
+
+                <SidebarItem
+                    to="/complaints"
+                    icon={<HiOutlineExclamationCircle />}
+                    text="Complaints"
+                />
+
+                <SidebarItem
+                    to="/notifications"
+                    icon={<HiOutlineBell />}
+                    text="Notifications"
+                />
+
+                <SidebarItem
+                    to="/amenities"
+                    icon={<HiOutlineBuildingOffice2 />}
+                    text="Amenities"
+                />
+
+                <SidebarItem
+                    to="/settings"
+                    icon={<HiOutlineCog6Tooth />}
+                    text="Settings"
+                />
 
             </nav>
 
@@ -47,17 +93,26 @@ function Sidebar() {
     );
 }
 
-function SidebarItem({ icon, text }) {
+function SidebarItem({ to, icon, text }) {
     return (
-        <button className="flex items-center gap-3 w-full rounded-lg px-4 py-3 text-white hover:bg-blue-600 transition duration-200">
+        <NavLink
+            to={to}
+            className={({ isActive }) =>
+                `flex items-center gap-3 w-full rounded-lg px-4 py-3 transition-all duration-200 ${
+                    isActive
+                        ? "bg-blue-600 text-white shadow-md"
+                        : "text-slate-300 hover:bg-slate-800 hover:text-white"
+                }`
+            }
+        >
             <span className="text-xl">
                 {icon}
             </span>
 
-            <span>
+            <span className="font-medium">
                 {text}
             </span>
-        </button>
+        </NavLink>
     );
 }
 
