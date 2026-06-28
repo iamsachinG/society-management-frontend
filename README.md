@@ -1,16 +1,60 @@
-# React + Vite
+## 🏆 Project Progress
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+### ✅ Completed
 
-Currently, two official plugins are available:
+- ✅ Project Setup (React + Vite)
+- ✅ Tailwind CSS Integration
+- ✅ Routing Configuration
+- ✅ Resident Layout
+- ✅ Responsive Sidebar
+- ✅ Navbar
+- ✅ Dashboard
+  - Statistics Cards
+  - Recent Visitors
+  - Recent Notifications
+  - Quick Actions
+- ✅ Profile Module
+- ✅ Maintenance Module
+- ✅ Reusable UI Components
+  - Card
+  - Button
+  - Badge
+  - Input
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🚧 In Progress
 
-## React Compiler
+- Visitors Module
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ⏳ Planned
 
-## Expanding the Oxlint configuration
+- Documents Module
+- Complaints Module
+- Notifications Module
+- Amenities Module
+- Settings Module
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 📅 Development Roadmap
+
+| Module | Status |
+|---------|--------|
+| Dashboard | ✅ Completed |
+| Profile | ✅ Completed |
+| Maintenance | ✅ Completed |
+| Visitors | 🚧 In Progress |
+| Documents | ⏳ Planned |
+| Complaints | ⏳ Planned |
+| Notifications | ⏳ Planned |
+| Amenities | ⏳ Planned |
+| Settings | ⏳ Planned |
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- React Icons
