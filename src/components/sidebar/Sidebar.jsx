@@ -70,12 +70,6 @@ function Sidebar() {
                 />
 
                 <SidebarItem
-                    to="/amenities"
-                    icon={<HiOutlineBuildingOffice2 />}
-                    text="Amenities"
-                />
-
-                <SidebarItem
                     to="/settings"
                     icon={<HiOutlineCog6Tooth />}
                     text="Settings"

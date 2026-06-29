@@ -9,7 +9,6 @@ import Visitors from "../pages/Visitors/Visitors";
 import Documents from "../pages/Documents/Documents";
 import Complaints from "../pages/Complaints/Complaints";
 import Notifications from "../pages/Notifications/Notifications";
-import Amenities from "../pages/Amenities/Amenities";
 import Settings from "../pages/Settings/Settings";
 import NotFound from "../pages/NotFound/NotFound";
 
@@ -31,7 +30,6 @@ function AppRoutes() {
           <Route path="/documents" element={<Documents />} />
           <Route path="/complaints" element={<Complaints />} />
           <Route path="/notifications" element={<Notifications />} />
-          <Route path="/amenities" element={<Amenities />} />
           <Route path="/settings" element={<Settings />} />
 
         </Route>

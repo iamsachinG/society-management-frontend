@@ -1,5 +1,15 @@
+import DocumentsHeader from "../../components/documents/DocumentsHeader";
+import DocumentsTable from "../../components/documents/DocumentsTable";
+
+import { documents } from "../../data/documentData";
+
 function Documents() {
-  return <h1>Documents</h1>;
+  return (
+    <div className="space-y-6">
+      <DocumentsHeader />
+      <DocumentsTable documents={documents} />
+    </div>
+  );
 }
 
 export default Documents;
